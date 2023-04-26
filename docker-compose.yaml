@@ -1,5 +1,8 @@
 version: "3"
 
+networks:
+    techtok-network:
+
 services:
     client:
         image: nginx
@@ -7,3 +10,17 @@ services:
             - 8000:80
         volumes:
             - ./src:/usr/share/nginx/html
+    db-mysql:
+        image: mysql:latest
+        user: root
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+        volumes:
+            - db-data:/var/lib/mysql
+            - ./mysql:/docker-entrypoint-initdb.d
+        ports:
+            - '3307:3306'
+        networks:
+            - techtok-network
+volumes:
+    db-data:
