@@ -1,5 +1,9 @@
 version: "3"
 
+networks:
+    techtok-network:
+        driver: bridge
+
 services:
     client:
         image: nginx
@@ -7,3 +11,19 @@ services:
             - 8000:80
         volumes:
             - ./src:/usr/share/nginx/html
+    db:
+        image: mysql:latest
+        container_name: techtok-db-1
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: techtok
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
+        volumes:
+            - ./data:/var/lib/mysql
+        ports:
+            - "3306:3306"
+        networks:
+            - techtok-network

@@ -1,141 +1,107 @@
+/* Reset de Estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do Body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 36px;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Conteúdo principal */
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #product {
-    margin-bottom: 40px;
-  }
-  
-  #product h2 {
-    font-size: 24px;
-    margin-top: 0;
-  }
-  
-  #product img {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  #product p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  #product button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  #product button:hover {
-    background-color: #555;
-  }
-  
-  #login {
-    display: none;
-    margin-bottom: 40px;
-  }
-  
-  #login h2 {
-    font-size: 24px;
-    margin-top: 0;
-  }
-  
-  #login form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #login label {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  #login input {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  #login button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  #login button:hover {
-    background-color: #555;
-  }
-  
-  #login p {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-  #login a {
-    color: #333;
-    text-decoration: underline;
-  }
-  
-  #login a:hover {
-    text-decoration: none;
-    color: #555;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  background-color: #FF7F7F;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Estilos do Header */
+header {
+  background-color: #CC0000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Estilos do Main */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.jogo, .anuncio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jogo img, .anuncio img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.jogo h3, .anuncio h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.jogo p, .anuncio p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Estilos do Formulário de Novidades */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+label {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #CC0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF2D2D;
+}

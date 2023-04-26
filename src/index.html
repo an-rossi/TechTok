@@ -1,48 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Produto XYZ</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Landing Page de Jogos</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <h1>Produto XYZ</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Carrinho</a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
-      </nav>
+      <h1>
+        <span id="tech">Tech</span>Stok
+      </h1>
     </header>
     <main>
-      <div id="product">
-        <h2>Produto XYZ</h2>
-        <img src="produto.jpg" alt="Produto XYZ">
-        <p>Techtok blablablablabla</p>
-        <button>Comprar</button>
-      </div>
-      <div id="login">
-        <h2>Login</h2>
-        <form>
-          <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email">
-          </div>
-          <div>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password">
-          </div>
-          <button>Entrar</button>
+      <section id="destaque">
+        <h2>Jogo em Destaque</h2>
+        <div class="jogo">
+          <img src="https://via.placeholder.com/300x200" alt="Imagem do jogo">
+          <h3>Nome do Jogo</h3>
+          <p>Descrição do Jogo</p>
+        </div>
+      </section>
+      <section id="novidades">
+        <h2>Receba mais novidades sobre jogos</h2>
+        <form id="form-novidades">
+          <label for="email">Inscreva-se em nossa lista de e-mails:</label>
+          <input type="email" id="email" name="email" placeholder="Seu melhor e-mail">
+          <button type="submit">Inscreva-se</button>
         </form>
-        <p>Não tem uma conta? <a href="#">Cadastre-se aqui</a>.</p>
-      </div>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2023 Produto XYZ</p>
+      <p>© 2023 Landing Page de Jogos</p>
     </footer>
     <script src="js/script.js"></script>
   </body>
